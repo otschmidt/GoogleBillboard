@@ -2,24 +2,29 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {      
 	int x=0;
-	int y=0;
+	int y=10;
 	for(int i=0; i<e.length();i++)
+	{
+		x++;
+		y++;
 		String digits = e.substring(x,y);
 		double dNum = Double.parseDouble(digits);
-	System.out.println(dNum); //displays 7.182818284E9
-    noLoop();  
+		if(dNum=true)
+		{
+			System.out.println(dNum); //displays 7.182818284E9
+    		noLoop();
+		}
+	}
+	
 }
 
- 
 public void draw()  
 {   
 	//not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
 {   
-    //to be finished later 
-    //for(int i=0; i<e.length();i++)
-		//if(substring(i,i+10)%2)  
+    //to be finished later  
   for(int i = 2; i <= Math.sqrt(dNum); i++)
     if(dNum%i == 0)
       return false;

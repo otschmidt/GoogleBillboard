@@ -9,9 +9,9 @@ public void setup()
 		y++;
 		String digits = e.substring(x,y);
 		double dNum = Double.parseDouble(digits);
-		if(dNum=true)
+		if(isPrime(dNum)==true)
 		{
-			System.out.println(dNum); //displays 7.182818284E9
+			System.out.println(digits); //displays 7.182818284E9
     		noLoop();
 		}
 	}
